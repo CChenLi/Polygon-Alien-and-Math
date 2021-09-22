@@ -15,7 +15,7 @@ For this project, we decided to create a short playable game atop the TinyGraphi
 
 The structure of the game is simple: for each level N in the game, the player must successfully dislodge N drones (simulated by firing a “drone trap” at the drone). If a drone collides with the house, the game ends, and the player’s score is reset. If all drones are removed, the player advances to the next level. A cutscene plays at the start of each game showing the player’s home being destroyed by a drone. To add a thin veneer of tech to the game, two movement methods were provided to the player. Mouse-driven movement is faster, but more difficult to use, given the tank-style player camera. WASD-based movement, on the other hand, is slower, but more accurate.
 
-![gameplay GIF](assets/report/gameplay.gif)
+![gameplay GIF](src/assets/report/gameplay.gif)
 
 ## Advanced Features, Extensions to TinyGraphics
 
@@ -104,11 +104,11 @@ With this, the player model could move across the island's uneven geometry with 
 
 One of the members of our group, Chen, had significant experience working in Blender before, and created a set of unique object files for the game. Specifically, the entirety of the island scene you see in our game was created by them.
 
-![early rendition of island scene](assets/report/island-preliminary.jpeg)
+![early rendition of island scene](src/assets/report/island-preliminary.jpeg)
 
 Another custom model created for the game was the player character:
 
-![player model](assets/report/playermodel.jpeg)
+![player model](src/assets/report/playermodel.jpeg)
 
 All other models in the game were created as composites by the team.
 
