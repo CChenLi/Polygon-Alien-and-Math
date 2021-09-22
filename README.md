@@ -54,7 +54,7 @@ Each model would be registered to the collision helper on draw, then updated as 
 ### Mouse Picking
 
 A primary feature used in the game was mouse picking for mouse-driven motion of the
-player model. An initial implementation of this feature was made with the addition of the [`Mousepick_Controls` subclass](helpers/mousepick.js) by appending an empty secondary scene to the controls of the primary in the same way `Movement_Controls` was.
+player model. An initial implementation of this feature was made with the addition of the [`Mousepick_Controls` subclass](src/helpers/mousepick.js) by appending an empty secondary scene to the controls of the primary in the same way `Movement_Controls` was.
 
 This secondary Scene object would track the user’s mouse position by using the inverse of the primary Scene’s world-to-image plane transformations. The class would then pass it to the primary Scene as a vector in world space. The primary scene would then use this vector to form a line, and test the line for intersections in the world.
 
@@ -62,7 +62,7 @@ This secondary Scene object would track the user’s mouse position by using the
 
 Though not explicitly listed as an advanced feature, a significant extension made to the TinyGraphics cradle was the ability to “glue” actors to a surface. This way, the player’s model could navigate our uneven island terrain with ease:
 
-![demonstration of "model gluing"](assets/report/gluing.gif)
+![demonstration of "model gluing"](src/assets/report/gluing.gif)
 
 Since there was realistically only one model that our playermodel needed to be glued to, we saved some code by registering only our island as “gluable”. However, since our island was a custom object as created in Blender, we needed to register vertices via TinyGraphics’ engine. To do this, we registered the shape’s `arrays.position`:
 
